@@ -1,0 +1,447 @@
+<!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full bg-gray-100">
+  <body class="h-full">
+  ```
+-->
+<div class="min-h-full">
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-20 items-center justify-between">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <img
+              class="h-10 w-10"
+              src="https://bkdelivery.co.id/static/website/img/logo_2022.38d01a7c7dd3.png"
+              alt="Burger King Delivery"
+            />
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a
+                href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2"
+              >
+                <p class="text-orange-600 text-sm">Delivery</p>
+                <p class="text-2xl">Order</p>
+              </a>
+              <a
+                href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2"
+              >
+                <p class="text-orange-600 text-sm">Get Fresh</p>
+                <p class="text-2xl">Promotions</p>
+              </a>
+              <a
+                href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2"
+              >
+                <p class="text-orange-600 text-sm">Exclusive</p>
+                <p class="text-2xl">Large Order</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-4 flex items-center md:ml-6">
+            <div class="text-white">
+              <p>LOGIN</p>
+            </div>
+
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <a href="">
+                  <svg
+                    class="w-6 h-6 text-white dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 18 21"
+                  >
+                    <path
+                      d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <!--
+                Dropdown menu, show/hide based on menu state.
+
+                Entering: "transition ease-out duration-100"
+                  From: "transform opacity-0 scale-95"
+                  To: "transform opacity-100 scale-100"
+                Leaving: "transition ease-in duration-75"
+                  From: "transform opacity-100 scale-100"
+                  To: "transform opacity-0 scale-95"
+              -->
+            </div>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <!-- Mobile menu button -->
+          <button
+            type="button"
+            class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!-- Menu open: "hidden", Menu closed: "block" -->
+            <svg
+              class="block h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+            <!-- Menu open: "block", Menu closed: "hidden" -->
+            <svg
+              class="hidden h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="md:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a
+          href="#"
+          class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2"
+        >
+          <p class="text-orange-600 text-sm">Delivery</p>
+          <p class="text-2xl">Order</p>
+        </a>
+        <a
+          href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2"
+        >
+          <p class="text-orange-600 text-sm">Get Fresh</p>
+          <p class="text-2xl">Promotions</p>
+        </a>
+        <a
+          href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2"
+        >
+          <p class="text-orange-600 text-sm">Exclusive</p>
+          <p class="text-2xl">Large Order</p>
+        </a>
+        <!-- <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2">Reports</a> -->
+      </div>
+      <div class="border-t border-gray-700 pb-3 pt-4">
+        <div class="flex items-center px-5">
+          <div class="flex-shrink-0">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+          </div>
+          <div class="ml-3">
+            <div class="text-base font-medium leading-none text-white">
+              Tom Cook
+            </div>
+            <div class="text-sm font-medium leading-none text-gray-400">
+              tom@example.com
+            </div>
+          </div>
+          <button
+            type="button"
+            class="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+          >
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">View notifications</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <header class="bg-white shadow">
+    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900">Dashboard</h1>
+    </div>
+  </header> -->
+  <main class="bg-cover bg-fixed bg-center bg-[url('https://bkdelivery.co.id/static/website/img/BK_bg.jpg')]">
+    <div class="mx-auto w-full py-6 sm:px-6 lg:px-8">
+      <div class="relative w-full">
+        <!-- Carousel wrapper -->
+        <div
+          class="relative pt-32 h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+        >
+          <!-- Item 1 -->
+          <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
+            <img
+              src="https://bkdelivery.co.id/media/slider_image/2023/7/20/abujzwwmmzghgeveytyxil.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 2 -->
+          <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
+            <img
+              src="https://bkdelivery.co.id/media/slider_image/2023/7/24/urjuzyzwnjzcf2ys8snrsr.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div id="carousel-item-3" class="hidden duration-700 ease-in-out">
+            <img
+              src="https://bkdelivery.co.id/media/slider_image/2023/7/24/a8kveqzmfbctuhwwgwmjni.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 4 -->
+          <div id="carousel-item-4" class="hidden duration-700 ease-in-out">
+            <img
+              src="https://bkdelivery.co.id/media/slider_image/2023/7/24/jjgq6femeqr6ew5ko7uyf2.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <div id="carousel-item-5" class="hidden duration-700 ease-in-out">
+            <img
+              src="https://bkdelivery.co.id/media/slider_image/2023/8/3/ijzniet93cwzputznoevuh.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <div id="carousel-item-6" class="hidden duration-700 ease-in-out">
+            <img
+              src="https://bkdelivery.co.id/media/slider_image/2023/7/17/wdzcg4kzkk2xbhptmvw8sa.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <div id="carousel-item-7" class="hidden duration-700 ease-in-out">
+            <img
+              src="https://bkdelivery.co.id/media/slider_image/2023/8/1/9wphtdr8ies3exsmxskyga.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <div id="carousel-item-8" class="hidden duration-700 ease-in-out">
+            <img
+              src="https://bkdelivery.co.id/media/slider_image/2023/8/1/epvsnbhvcy7crg34wktfdz.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+        >
+          <button
+            id="carousel-indicator-1"
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            id="carousel-indicator-2"
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            id="carousel-indicator-3"
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            id="carousel-indicator-4"
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            id="carousel-indicator-5"
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            id="carousel-indicator-6"
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            id="carousel-indicator-7"
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 7"
+          ></button>
+          <button
+            id="carousel-indicator-8"
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 8"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          id="data-carousel-prev"
+          type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="hidden">Previous</span>
+          </span>
+        </button>
+        <button
+          id="data-carousel-next"
+          type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="hidden">Next</span>
+          </span>
+        </button>
+      </div>
+      <div class="flex justify-center items-center text-amber-800 py-10">
+        <h1 class="text-3xl font-extrabold">Our Menu</h1>
+      </div>
+      <div class="w-full px-[6rem] md:px-[15rem] lg:[20rem]">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="p-8 rounded-t-lg" src="https://media-order.bkdelivery.co.id/thumb/group_photo/2023/8/1/amwdjxph9s6gxv93umwicu_product_list.jpg" alt="product image" />
+            </a>
+            <div class="px-5 pb-5">
+                <div class="flex items-center justify-between">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Pesta Merdeka</h5>
+                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                </div>
+            </div>
+          </div>
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="p-8 rounded-t-lg" src="https://media-order.bkdelivery.co.id/thumb/group_photo/2023/8/1/amwdjxph9s6gxv93umwicu_product_list.jpg" alt="product image" />
+            </a>
+            <div class="px-5 pb-5">
+                <div class="flex items-center justify-between">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Pesta Merdeka</h5>
+                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                </div>
+            </div>
+          </div>
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="p-8 rounded-t-lg" src="https://media-order.bkdelivery.co.id/thumb/group_photo/2023/8/1/amwdjxph9s6gxv93umwicu_product_list.jpg" alt="product image" />
+            </a>
+            <div class="px-5 pb-5">
+                <div class="flex items-center justify-between">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Pesta Merdeka</h5>
+                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                </div>
+            </div>
+          </div>
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="p-8 rounded-t-lg" src="https://media-order.bkdelivery.co.id/thumb/group_photo/2023/8/1/amwdjxph9s6gxv93umwicu_product_list.jpg" alt="product image" />
+            </a>
+            <div class="px-5 pb-5">
+                <div class="flex items-center justify-between">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Pesta Merdeka</h5>
+                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Your content -->
+    </div>
+  </main>
+</div>
